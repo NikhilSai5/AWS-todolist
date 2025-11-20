@@ -2,6 +2,8 @@ from flask import Flask, flash, redirect, request, session, render_template
 from markupsafe import Markup
 from flask_session import Session
 import requests
+import hashlib
+import json
 
  
 app = Flask(__name__, template_folder='pages', static_folder='styles')
